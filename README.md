@@ -25,7 +25,7 @@ Then, in your Python code connect to that channel:
 
 ````python
 from bllbrd import Channel
-channel = Channel('my-channel-name')
+channel = Channel("my-channel-name")
 ````
 
 And with one more line you can send e.g. a URL to your device:
