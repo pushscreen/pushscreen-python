@@ -10,7 +10,7 @@ bllbrd
 """
 
 __title__ = 'bllbrd'
-__version__ = '0.1.0'
+__version__ = '0.1.2'
 __author__ = 'Philipp Bosch'
 __license__ = 'ISC'
 __copyright__ = 'Copyright 2012 Philipp Bosch'

@@ -13,5 +13,11 @@ class Channel(object):
         r = requests.post('%s/%s' % (self.API_ENDPOINT, self.name), data=payload)
         return r.json
     
-    url = curry(post, type='url')
-    html = curry(post, type='html')
+    def url(self, url, **kwargs):
+        return self.post(type='url', url=url, **kwargs)
+    
+    def html(self, html, **kwargs):
+        return self.post(type='html', html=html, **kwargs)
+    
+    def clear(self, **kwargs):
+        return self.post(type='clear', **kwargs)
