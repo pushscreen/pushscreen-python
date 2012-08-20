@@ -53,13 +53,13 @@ Or use one of the following convenience methods:
 ### url
 
 ````python
-channel.url(url="http://code.pb.io/bllbrd/demo1.html")
+channel.url("http://code.pb.io/bllbrd/demo1.html")
 ````
 
 ### html
 
 ````python
-channel.html(html="<h1>Hello world!</h1>")
+channel.html("<h1>Hello world!</h1>")
 ````
 
 ### clear
@@ -82,7 +82,7 @@ To enable touch interaction (links, buttons, etc.), set this to `True`.
 
 * Type: `bool`
 * Default: `False`
-* Example: `channel.url(url="http://my-url.com/", interactive=True)`
+* Example: `channel.url("http://my-url.com/", interactive=True)`
 
 ### scrollable
 
@@ -91,7 +91,7 @@ Only useful if you also set `interactive=True`.
 
 * Type: `bool`
 * Default: `False`
-* Example: `channel.url(url="http://my-url.com/", interactive=True, scrollable=True)`
+* Example: `channel.url("http://my-url.com/", interactive=True, scrollable=True)`
 
 ### bounces
 
@@ -100,7 +100,7 @@ in combination with `scrollable=True`.
 
 * Type: `bool`
 * Default: `False`
-* Example: `channel.url(url="http://my-url.com/", interactive=True, scrollable=True, bounces=True)`
+* Example: `channel.url("http://my-url.com/", interactive=True, scrollable=True, bounces=True)`
 
 ### zoomable
 
@@ -109,7 +109,7 @@ set this to `True`.
 
 * Type: `bool`
 * Default: `False`
-* Example: `channel.url(url="http://my-url.com/", zoomable=True)`
+* Example: `channel.url("http://my-url.com/", zoomable=True)`
 
 ### javascript
 
@@ -118,7 +118,7 @@ loaded.
 
 * Type: `str`
 * Default: `""`
-* Example: `channel.url(url="http://my-url.com/", javascript="alert('Hello world!');")`
+* Example: `channel.url("http://my-url.com/", javascript="alert('Hello world!');")`
 
 ### ttl
 
@@ -128,4 +128,4 @@ set the `ttl` parameter to the desired time in seconds.
 
 * Type: `float`
 * Default: `-1` (do not disappear)
-* Example: `channel.url(url="http://my-url.com/", ttl=5.0)`
+* Example: `channel.url("http://my-url.com/", ttl=5.0)`
