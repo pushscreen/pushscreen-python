@@ -23,12 +23,16 @@ First, open the iPad app and create a channel.
 
 Then, in your Python code connect to that channel:
 
-    from bllbrd import Channel
-    channel = Channel('my-channel-name')
+````python
+from bllbrd import Channel
+channel = Channel('my-channel-name')
+````
 
 And with one more line you can send e.g. a URL to your device:
 
-    channel.post(type="url", url="http://code.pb.io/bllbrd/demo1.html")
+````python
+channel.post(type="url", url="http://code.pb.io/bllbrd/demo1.html")
+`````
 
 
 Different types of posts
@@ -38,23 +42,31 @@ You can post all types of posts using the `channel.post()` method. Just
 set the `type` argument to either `url`, `html` or `clear`, and supply
 other parameters as keyword arguments.
 
-    channel.post(type="url", url="http://code.pb.io/bllbrd/demo1.html")
-    channel.post(type="html", html="<h1>Hello world</h1>")
-    channel.post(type="clear")
+````python
+channel.post(type="url", url="http://code.pb.io/bllbrd/demo1.html")
+channel.post(type="html", html="<h1>Hello world</h1>")
+channel.post(type="clear")
+````
 
 Or use one of the following convenience methods:
 
 ### url
 
-    channel.url(url="http://code.pb.io/bllbrd/demo1.html")
+````python
+channel.url(url="http://code.pb.io/bllbrd/demo1.html")
+````
 
 ### html
 
-    channel.html(html="<h1>Hello world!</h1>")
+````python
+channel.html(html="<h1>Hello world!</h1>")
+````
 
 ### clear
 
-    channel.clear()
+````python
+channel.clear()
+````
 
 
 Customization
