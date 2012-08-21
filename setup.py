@@ -24,7 +24,7 @@ setup(
     name='pushscreen',
     version=pushscreen.__version__,
     description='Python client for pushscreen.io',
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     author='Philipp Bosch',
     author_email='hello@pb.io',
     url='http://pushscreen.io/',

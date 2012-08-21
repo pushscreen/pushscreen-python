@@ -5,7 +5,6 @@ import pushscreen
 
 def readme():
     local('pandoc -t rst README.md > README.rst')
-    local('git commit README.rst -m "Update README.rst."')
 
 def version():
     print pushscreen.__version__
