@@ -33,6 +33,11 @@ setup(
     package_dir={'pushscreen': 'pushscreen'},
     include_package_data=True,
     install_requires=['requests'],
+    entry_points={
+        'console_scripts': [
+            'pushscreen = pushscreen.cli:main',
+        ]
+    },
     license=open('LICENSE').read(),
     classifiers=(
         'Development Status :: 3 - Alpha',
