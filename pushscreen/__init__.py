@@ -10,7 +10,7 @@ pushscreen
 """
 
 __title__ = 'PushScreen'
-__version__ = '0.2.3'
+__version__ = '0.2.4'
 __author__ = 'Philipp Bosch'
 __license__ = 'ISC'
 __copyright__ = 'Copyright 2012 Philipp Bosch'
