@@ -3,7 +3,7 @@
 import os
 import sys
 
-import bllbrd
+from pushscreen import __version__
 
 try:
     from setuptools import setup
@@ -17,20 +17,20 @@ if sys.argv[-1] == 'publish':
 os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 
 packages = [
-    'bllbrd',
+    'pushscreen',
 ]
 
 setup(
-    name='bllbrd',
-    version=bllbrd.__version__,
-    description='Python client for bllbrd.io',
+    name='pushscreen',
+    version=pushscreen.__version__,
+    description='Python client for pushscreen.io',
     long_description=open('README.md').read(),
     author='Philipp Bosch',
     author_email='hello@pb.io',
-    url='http://bllbrd.io/',
+    url='http://pushscreen.io/',
     packages=packages,
     package_data={'': ['LICENSE']},
-    package_dir={'bllbrd': 'bllbrd'},
+    package_dir={'pushscreen': 'pushscreen'},
     include_package_data=True,
     install_requires=['requests'],
     license=open('LICENSE').read(),

@@ -1,8 +1,8 @@
-bllbrd.io Python client
-=======================
+pushscreen.io Python client
+===========================
 
-This is a Python library that makes it even easier to talk the *bllbrd.io* 
-web service in order to connect to the *bllbrd iPad app* (app storeapproval 
+This is a Python library that makes it even easier to talk the *pushscreen.io* 
+web service in order to connect to the *PushScreen iPad app* (app storeapproval 
 pending). 
 
 
@@ -13,7 +13,7 @@ The code has been tested with Python 2.6 and 2.7.
 
 Please use `pip` to install on your machine:
 
-    pip install bllbrd
+    pip install pushscreen
 
 
 Getting Started
@@ -24,14 +24,14 @@ First, open the iPad app and create a channel.
 Then, in your Python code connect to that channel:
 
 ````python
-from bllbrd import Channel
+from pushscreen import Channel
 channel = Channel("my-channel-name")
 ````
 
 And with one more line you can send e.g. a URL to your device:
 
 ````python
-channel.post(type="url", url="http://code.pb.io/bllbrd/demo1.html")
+channel.post(type="url", url="http://code.pb.io/pushscreen/demo1.html")
 `````
 
 
@@ -43,7 +43,7 @@ set the `type` argument to either `url`, `html` or `clear`, and supply
 other parameters as keyword arguments.
 
 ````python
-channel.post(type="url", url="http://code.pb.io/bllbrd/demo1.html")
+channel.post(type="url", url="http://code.pb.io/pushscreen/demo1.html")
 channel.post(type="html", html="<h1>Hello world</h1>")
 channel.post(type="clear")
 ````
@@ -53,7 +53,7 @@ Or use one of the following convenience methods:
 ### url
 
 ````python
-channel.url("http://code.pb.io/bllbrd/demo1.html")
+channel.url("http://code.pb.io/pushscreen/demo1.html")
 ````
 
 ### html
