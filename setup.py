@@ -3,7 +3,7 @@
 import os
 import sys
 
-from pushscreen import __version__
+import pushscreen
 
 try:
     from setuptools import setup
