@@ -1,9 +1,8 @@
 pushscreen.io Python client
 ===========================
 
-This is a Python library that makes it even easier to talk the *pushscreen.io* 
-web service in order to connect to the *PushScreen iPad app* (app storeapproval 
-pending). 
+This is a Python library that makes it even easier to talk the [pushscreen.io](http://developer.pushscreen.io/)
+web service in order to connect to the [PushScreen iPad app](http://pushscreen.io/). 
 
 
 Installation
@@ -31,21 +30,21 @@ channel = Channel("my-channel-name")
 And with one more line you can send e.g. a URL to your device:
 
 ````python
-channel.post(type="url", url="http://code.pb.io/pushscreen/demo1.html")
-`````
+channel.push(type="url", url="http://code.pb.io/pushscreen/demo1.html")
+````
 
 
-Different types of posts
+Different types of pushs
 ------------------------
 
-You can post all types of posts using the `channel.post()` method. Just
+You can push all types of content using the `channel.push()` method. Just
 set the `type` argument to either `url`, `html` or `clear`, and supply
 other parameters as keyword arguments.
 
 ````python
-channel.post(type="url", url="http://code.pb.io/pushscreen/demo1.html")
-channel.post(type="html", html="<h1>Hello world</h1>")
-channel.post(type="clear")
+channel.push(type="url", url="http://code.pb.io/pushscreen/demo1.html")
+channel.push(type="html", html="<h1>Hello world</h1>")
+channel.push(type="clear")
 ````
 
 Or use one of the following convenience methods:
@@ -72,7 +71,7 @@ channel.clear()
 Customization
 -------------
 
-For the `url` and `html` post types you may supply one or more of the
+For the `url` and `html` push types you may supply one or more of the
 following customization options:
 
 ### interactive
@@ -122,8 +121,8 @@ loaded.
 
 ### ttl
 
-By default the post content will stay on the screen until the user dismisses it or
-the next post arrives. If you want your content to disappear after a specific time, 
+By default the pushed content will stay on screen until the user dismisses it or
+the next push arrives. If you want your content to disappear after a specific time, 
 set the `ttl` parameter to the desired time in seconds.
 
 * Type: `float`
