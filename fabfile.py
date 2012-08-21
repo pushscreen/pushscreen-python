@@ -12,6 +12,7 @@ def version():
 def bump(new_version):
     local('sed -i "" "s/^__version__ = .*$/__version__ = \'%s\'/g" pushscreen/__init__.py' % new_version)
     local('git commit pushscreen/__init__.py -m "Bump version to %s"' % new_version)
+    local('git tag %s' % new_version)
 
 def release(new_version):
     if new_version != pushscreen.__version__:
