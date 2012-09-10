@@ -22,16 +22,16 @@ First, open the iPad app and create a channel.
 
 Then, in your Python code connect to that channel:
 
-````python
+```python
 from pushscreen import Channel
 channel = Channel("my-channel-name")
-````
+```
 
 And with one more line you can send e.g. a URL to your device:
 
-````python
+```python
 channel.push(type="url", url="http://code.pb.io/pushscreen/demo1.html")
-````
+```
 
 
 Different types of pushs
@@ -41,31 +41,31 @@ You can push all types of content using the `channel.push()` method. Just
 set the `type` argument to either `url`, `html` or `clear`, and supply
 other parameters as keyword arguments.
 
-````python
+```python
 channel.push(type="url", url="http://code.pb.io/pushscreen/demo1.html")
 channel.push(type="html", html="<h1>Hello world</h1>")
 channel.push(type="clear")
-````
+```
 
 Or use one of the following convenience methods:
 
 ### url
 
-````python
+```python
 channel.url("http://code.pb.io/pushscreen/demo1.html")
-````
+```
 
 ### html
 
-````python
+```python
 channel.html("<h1>Hello world!</h1>")
-````
+```
 
 ### clear
 
-````python
+```python
 channel.clear()
-````
+```
 
 
 Customization
